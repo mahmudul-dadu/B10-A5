@@ -34,14 +34,14 @@ const donateTab = document.getElementById("donate_tab");
 const cardsSection = document.querySelector(".cards"); 
 const historySection = document.getElementById("history-section");
 
-historyTab.addEventListener('click', function() {
+    historyTab.addEventListener('click', function() {
     historyTab.classList.add('bg-lime-400');
     donateTab.classList.remove('bg-lime-400'); 
     cardsSection.style.display = 'none';
     historySection.style.display = 'block';
 });
 
-donateTab.addEventListener('click', function() {
+    donateTab.addEventListener('click', function() {
     donateTab.classList.add('bg-lime-400');
     historyTab.classList.remove('bg-lime-400');
     cardsSection.style.display = 'block';

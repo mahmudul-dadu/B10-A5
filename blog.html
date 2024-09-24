@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+      <!-- Nav bar started -->
+      <header class="  backdrop-blur-lg  sticky top-0 left-0 z-10 border ">
+        <nav class=" bg-[#f9f7f39d]  backdrop-blur-xl  ">
+        <div class="w-[75%] mx-auto flex items-center justify-between py-10">
+                  <!-- <button class="btn btn-lg bg-lime-400 text-[#111111] text-xl font-bold">
+            Blog
+          </button> -->
+          <a href="index.html" class="btn btn-lg bg-lime-400 text-[#111111] text-xl font-bold">Home</a>
+          <div class="flex items-center justify-evenly gap-2 text-xl">
+            <img src="assets/logo.png" alt="" />
+            <h4 class="text-[#111111] font-bold">Donate Bangladesh</h4>
+          </div>
+          <div class="flex items-center gap-1">
+            <img src="assets/coin.png" alt="" />
+            <div class="stat-value text-[#1111119a] text-xl font-semibold">
+              <span id="total_donation"> 20000 </span>
+            </div>
+            <h4 class="font-bold text-[#1111119a] text-xl">BDT</h4>
+          </div>
+        </nav>
+        <!-- nav bar end -->
+  
+        </div>
+               <!-- donation and history button -->
+        <section>
+          <div class="flex justify-center gap-4 mt-6 mb-5">
+            <button id="donate_tab" class="btn btn-lg bg-lime-400 font-bold text-xl">
+              Donation
+            </button>
+            <button id="history_tab"
+              class="btn btn-lg font-medium bg-inherit border-gray-300 text-xl"
+            >
+              History
+            </button>
+          </div>
+        </section>
+      </header>
+      <main>
+        <div>
+            <h2 class="text-5xl font-bold mx-auto w-[80%]">Important Faq <i class="fa-solid fa-person-circle-question"></i> </h2>
+        </div>
+        <div class="text-5xl font-bold mx-auto w-[80%] mt-5">
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-5">
+                <div class="collapse-title text-2xl font-medium">What is the Document Object    Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p class="font-normal text-base">The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. With the DOM, programmers can access and manipulate HTML or XML documents as if they were using an object-oriented programming language.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="text-5xl font-bold mx-auto w-[80%]">
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-5">
+                <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p class="font-normal text-base"><b class="text-lg">To select an element from the DOM (Document Object Model) in JavaScript, you can use several methods depending on the type of selection you need. Here are the most common methods:</b>
+                    <br>
+                    <br>
+
+                    <b>1. Select by id:</b>
+                    Use document.getElementById("id") to select a single element by its id attribute.
+                    <br>
+                    <br>
+                    <b>2. Select by class:
+                        Use document.</b>getElementsByClassName("class-name") to select all elements with a specific class name. This returns an HTMLCollection (a list-like array of elements).
+                    <br>
+                    <br>
+                    <b>3. Select by tag:</b>
+                    Use document.getElementsByTagName("tag-name") to select all elements with a specific tag (e.g., div, p, button). This also returns an HTMLCollection.
+                    <br>
+                    <br>
+                    <b>4. Select with querySelector (CSS-style selector):</b>
+                    Use document.querySelector("selector") to select the first element that matches a CSS selector.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="text-5xl font-bold mx-auto w-[80%]">
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-5">
+                <div class="collapse-title text-2xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p class="font-normal text-base">Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="text-5xl font-bold mx-auto w-[80%]">
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-5">
+                <div class="collapse-title text-2xl font-medium">How do you manipulate an element's attributes and styles using  the DOM?</div>
+                <div class="collapse-content">
+                  <p class="font-normal text-base">Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method is used to change the <input> element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="text-5xl font-bold mx-auto w-[80%] ">
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border py-5">
+                <div class="collapse-title text-2xl font-medium">Understanding the DOM as an Object Hierarchy</div>
+                <div class="collapse-content">
+                  <p class="font-normal text-base">Its good to think of the DOM as an object made up of objects. All of the elements in your HTML become an element object. Much like an array object, this allows you to call useful methods on it.
+
+                    When the browser parses the HTML and creates the DOM, it structures everything like a tree. Every set of tags becomes a branch with as many sub branches as needed. Every branch, or node, has a parent. All nodes have parents apart from one, the root node, which is called document.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+
+
+      </main>
+      <footer>
+
+      </footer>
+</body>
+</html>
