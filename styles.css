@@ -5,3 +5,44 @@
 .history-item {
     padding-bottom: 1rem;
 }
+
+
+
+/* ========================================
+       responsive started
+============================================*/
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+    .mobile_flex{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+
+    }
+    .nav_responsive{
+        display: flex;
+        flex-direction: column;
+      
+       
+    }
+    .nav_blog{
+        display: flex;
+        flex-direction: column;
+    
+   
+    }
+    .nav_blog_button{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid red;
+        
+    }
+   
+
+    .cards_flex{
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
