@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading">show addition</h2>
+    <br>
+    <button onclick="change_text()">calculate</button>
+    <br><br>
+    <button onclick="change_color()">Change color</button>
+    <script>
+        let x=4;
+        let y = 6;
+        x=x+y;
+        let current_color=0;
+        function change_text(){
+            document.getElementById("add").innerHTML="now"+x;
+        }
+        function change_color(){
+            if(current_color==0){
+                document.body.style.backgroundColor="red"
+            } 
+            else if(current_color==1) {
+                document.body.style.backgroundColor="black"
+            }
+            else if(current_color==2) {
+                document.body.style.backgroundColor="purple"
+            }
+            else if(current_color==3) {
+                document.body.style.backgroundColor="green"
+            }
+            else if(current_color==4) {
+                document.body.style.backgroundColor="blue"
+            }
+            else if(current_color==5) {
+                document.body.style.backgroundColor="white"
+            }
+            else {
+                current_color=0;
+            }
+            current_color++
+            current_color = (current_color + 1) % 6;
+            
+
+
+        }
+
+    </script>
+</body>
+</html>

@@ -194,3 +194,54 @@ document.getElementById('donate_quota').addEventListener('click', function(event
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('donate_sylhet').addEventListener('click', function (event) {
+    event.preventDefault();
+
+    const addDonate = document.getElementById('input_sylhet_donate').value;
+    const sylhetDonateBalance = document.getElementById('sylhet_donate').innerText;
+    const total_variable = document.getElementById('total_donation').innerText;
+
+    const inputDonate = parseFloat(addDonate);
+    const currentSylhet = parseFloat(sylhetDonateBalance);
+    const totalDonation = parseFloat(total_variable);
+
+    if (addDonate === "" || isNaN(inputDonate) || inputDonate <= 0) {
+        alert('Please enter a valid donation amount.');
+        return;
+    }
+
+    if (inputDonate > totalDonation) {
+        alert('Donation exceeds available funds.');
+        return;
+    }
+
+    document.getElementById('sylhet_donate').innerText = currentSylhet + inputDonate;
+    document.getElementById('total_donation').innerText = totalDonation - inputDonate;
+
+    // Append to history
+    const dateObj = new Date();
+    const historyItem = document.createElement("div");
+    historyItem.className = "border bg-white rounded-md";
+    historyItem.innerHTML = `
+        <h4 class="font-bold text-xl w-10/12 text-start mx-auto mb-4 mt-5"> 
+        ${inputDonate} Taka Donated for Flood Relief in Sylhet, Bangladesh </h4>
+        <p class="text-start w-10/12 mx-auto mb-5">Date : ${dateObj.toGMTString()} (Bangladesh Standard Time)</p>`;
+    document.getElementById("history-section").appendChild(historyItem);
+
+    document.getElementById('input_sylhet_donate').value = "";
+    document.getElementById('my_modal_1').showModal();
+});

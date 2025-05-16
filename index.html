@@ -14,9 +14,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    
     <!-- Nav bar started -->
     <header class="  backdrop-blur-lg  sticky top-0 left-0 z-10 border mobile_flex">
-      
+
+
+
+
+
         <div>
           <nav class=" bg-[#f9f7f39d]  backdrop-blur-xl nav_responsive ">
             <div class="w-[75%] mx-auto flex items-center justify-between py-10 nav_blog">
@@ -40,6 +45,8 @@
       <!-- nav bar end -->
              <!-- donation and history button -->
         <div class="flex justify-center gap-4 mt-6 mb-5  nav_blog_button">
+          <a href="main.html" class="btn btn-lg  border-gray-300  text-[#111111] text-xl font-bold">Front View</a>
+
           <button id="donate_tab" class="btn btn-lg bg-lime-400 font-bold text-xl">
             Donation
           </button>
@@ -146,6 +153,48 @@
       </div>
   </div>
 </div>
+<!--card 4-->
+<div
+          class="card card-side bg-base-100 mx-auto w-[70%] border border-gray-200 my-3 "
+        >
+          <div class=" flex gap-8 items-center px-8 py-8 cards_flex">
+            <div class=" border">
+              <img class="w-full h-full object-cover" src="assets/sylhet.jpeg" alt=" Flood at Sylhet, PICTURE" />
+            </div>
+            
+            <div class="w-[80%]">
+              <button  class="btn mb-3">
+                <img src="assets/coin.png" alt="" />
+                <span id="sylhet_donate">0</span>
+                
+                <p>BDT</p>
+              </button>
+
+              <h2 class="card-title text-xl">
+                🏚 Flood Relief at Sylhet, Bangladesh
+              </h2>
+              <p class="text-base">
+                The recent floods in Sylhet have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <input
+                id="input_sylhet_donate"
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered input-md w-[100%] mt-4"
+              />
+              <div class="card-actions justify-end">
+                <button id="donate_sylhet" class="btn btn-block mt-4 bg-lime-400 font-bold text-lg ">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- history container -->
